@@ -8,7 +8,7 @@ public enum StudyProfile {
 
     private final String profileName;
 
-    private StudyProfile(String profileName) {
+    StudyProfile(String profileName) {
         this.profileName = profileName;
     }
 
