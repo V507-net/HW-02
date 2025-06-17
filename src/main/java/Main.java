@@ -10,6 +10,7 @@ public class Main {
               .setFullName("Great University")
               .setShortName("GU")
               .setYearOfFoundation(1971);
+
         stud.setFullName("Ivanov Ivan Ivanovich")
             .setAvgExamScore(4.5F)
             .setUniversityId("001")
