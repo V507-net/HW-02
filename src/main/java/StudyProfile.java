@@ -1,5 +1,6 @@
 public enum StudyProfile {
 
+    LINGUISTICS("Лингвистика"),
     MEDICINE ("Медицина"),
     HISTORY("История"),
     MATHEMATICS("Математика"),

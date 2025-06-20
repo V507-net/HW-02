@@ -1,23 +1,26 @@
+import java.io.IOException;
+import java.util.List;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        University univer = new University();
-        Student stud = new Student();
+        
+        List<Student> studs = importExcel.readStudents("src/main/resources/universityInfo.xlsx");
+        List<University> univers = importExcel.readUniversities("src/main/resources/universityInfo.xlsx");
 
-        univer.setId("001")
-              .setMainProfile(StudyProfile.HISTORY)
-              .setFullName("Great University")
-              .setShortName("GU")
-              .setYearOfFoundation(1971);
+        System.out.println("Список студентов:");
+        for (Student student : studs)
+        {
+            System.out.println(student);
+        }
 
-        stud.setFullName("Ivanov Ivan Ivanovich")
-            .setAvgExamScore(4.5F)
-            .setUniversityId("001")
-            .setCurrentCourseNumber(2);
+        System.out.println("Список университетов:");
+        for (University university : univers)
+        {
+            System.out.println(university);
+        }
 
-        System.out.println(univer);
-        System.out.println(stud);
 
     }
 }
