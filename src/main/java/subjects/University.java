@@ -1,3 +1,7 @@
+package subjects;
+
+import enums.StudyProfile;
+
 public class University {
 
     private String id;
@@ -56,7 +60,7 @@ public class University {
 
     @Override
     public String toString() {
-        return "University{" +
+        return "subjects.University{" +
                 "id='" + id + '\'' +
                 ", fullName='" + fullName + '\'' +
                 ", shortName='" + shortName + '\'' +

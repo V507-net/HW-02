@@ -1,0 +1,10 @@
+package compare;
+
+import subjects.Student;
+
+import java.util.Comparator;
+
+public interface StudComparator extends Comparator<Student> {
+
+
+}
