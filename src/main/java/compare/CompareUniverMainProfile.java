@@ -7,6 +7,6 @@ import subjects.University;
 public class CompareUniverMainProfile implements UniverCoparator{
     @Override
     public int compare(University o1, University o2) {
-        return StringUtils.compare(o1.getMainProfile().toString(),o2.getMainProfile().toString());
+        return StringUtils.compare(o1.getMainProfile().getProfileName(),o2.getMainProfile().getProfileName());
     }
 }

@@ -65,7 +65,7 @@ public class University {
                 ", fullName='" + fullName + '\'' +
                 ", shortName='" + shortName + '\'' +
                 ", yearOfFoundation=" + yearOfFoundation +
-                ", mainProfile=" + mainProfile +
+                ", mainProfile=" + mainProfile.getProfileName() +
                 '}';
     }
 }
